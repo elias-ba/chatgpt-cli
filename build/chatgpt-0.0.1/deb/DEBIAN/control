@@ -1,0 +1,9 @@
+Package: chatgpt
+Version: 0.0.1
+Section: utils
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: Elias W. BA <eliaswalyba@gmail.com>
+Description: A simple command-line interface (CLI) for interacting with OpenAI's ChatGPT model.
