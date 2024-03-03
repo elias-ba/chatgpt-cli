@@ -63,10 +63,7 @@ DATA
 
   local reply=$(echo "$response" | jq -r '.choices[0].message.content')
 
-  local readme_temp=$(mktemp)
-  trap 'rm -f "$readme_temp"' EXIT
-  echo "ChatGPT: $reply" >"$readme_temp"
-  glow "$readme_temp"
+  echo "$reply" | glow -
 }
 
 echo "ChatGPT CLI - Model: $MODEL - Type 'exit' to end the chat."
